@@ -1,0 +1,83 @@
+body {
+  color: #4f4f5a;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+  padding: 0;
+  margin: 0; }
+
+#active-slide {
+  width: 100%;
+  display: table;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+#slider {
+  position: relative;
+  width: calc(100% * 4);
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; }
+
+.slide {
+  width: calc(100%/4);
+  list-style: none;
+  display: inline;
+  float: left; }
+
+.slide img {
+  width: 100%; }
+
+.Radio-But {
+  margin-top: 10px;
+  text-align: center; }
+
+.Radio-But .ctrl-select {
+  margin: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: #000 center bottom no-repeat; }
+
+.Radio-But .ctrl-select:hover {
+  cursor: pointer;
+  background-position: center center; }
+
+.Radio-But .ctrl-select.active {
+  background-position: center top; }
+
+#prewbutton, #nextbutton {
+  display: block;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  text-indent: -999px;
+  background: url("../img/icon/left.png") left center no-repeat;
+  opacity: 0.5;
+  z-index: 3;
+  outline: none !important; }
+
+#prewbutton {
+  left: 10px; }
+
+#nextbutton {
+  right: 10px;
+  background: url("../img/icon/right.png") right center no-repeat; }
+
+#prewbutton:hover, #nextbutton:hover {
+  opacity: 1; }

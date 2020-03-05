@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About</title>
+	<title>MyFirstSIte</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap&subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
+
 <body>
 	<div class="wrapper">
 <header class="header">
 	<div class="header_row">
 		<div class="header__logo">
-			<img src="img/logo.png" alt="">
+			<a href="index.html"><img src="img/logo.png" alt="logo"></a>
 		</div>
 		<nav class="header__menu">
+			<div class="icon-menu" id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<ul class="header__menu-menu">
 				<li>
 					<p>Homepage</p>
@@ -134,13 +143,14 @@
 <footer class="footer">
 	<div class="footer_line-bg"></div>
 	<div class="footer_row">
-		<div class="footer__copy">
+		<div>
 			<p>All Content Copyright 2012 - Blitz. All Rights Reserved.</p>
 		</div>
-		<div class="footer__dev">
+		<div>
 			<p>Site Developed by Best PSD Freebies</p>
 		</div>
 	</div>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
